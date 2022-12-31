@@ -84,10 +84,12 @@ function typeText() {
       element2.textContent = text2;
       fadeIn(element2);
       setTimeout(() => {
-        animate();
-        // Change background to bggif.gif
         document.body.style.backgroundImage = "url('bggif.gif')";
-      }, 7000);
+        setTimeout(() => {
+            animate();
+        }, 0);
+        // Change background to bggif.gif
+      }, 6000);
     }
   }
   
